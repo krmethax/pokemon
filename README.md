@@ -1,23 +1,16 @@
-# Pokémon Team Builder
+# pokemon
 
-## คุณสมบัติหลัก
-- **สร้างทีม**: เลือกโปเกมอนที่คุณชื่นชอบเพื่อสร้างทีมในฝัน  
-- **บันทึกทีม**: บันทึกทีมที่คุณสร้างไว้ เพื่อให้เรียกดูหรือแก้ไขได้ในภายหลัง  
-- **แก้ไขและลบทีม**: สามารถแก้ไขชื่อทีมหรือสมาชิกในทีม รวมถึงลบทีมที่ไม่ต้องการออกได้  
-- **กรองตามประเภท**: กรองรายชื่อโปเกมอนตามประเภท (เช่น Normal, Fire, Water) เพื่อให้ค้นหาง่ายขึ้น  
+A new Flutter project.
 
----
+## Getting Started
 
-## ข้อกำหนดของระบบ
-- **Flutter SDK**: `>=3.0.0`  
-- **Android Studio / VS Code** (ติดตั้งปลั๊กอิน Flutter & Dart)  
-- **อุปกรณ์จำลอง (Emulator)** หรือ **อุปกรณ์จริง (Physical Device)**  
+This project is a starting point for a Flutter application.
 
----
+A few resources to get you started if this is your first Flutter project:
 
-## การติดตั้งและการรัน
-```bash
-git clone <URL_ของ_repository_นี้>
-cd <ชื่อ_โฟลเดอร์_โปรเจกต์>
-flutter pub get
-flutter run
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
