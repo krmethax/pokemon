@@ -4,7 +4,7 @@ import 'package:get_storage/get_storage.dart';
 import 'pages/home.dart';
 
 void main() async {
-  await GetStorage.init(); // เริ่ม GetStorage
+  await GetStorage.init();
   runApp(const MyApp());
 }
 

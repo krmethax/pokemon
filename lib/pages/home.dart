@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'team.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,11 +15,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                "assets/images/logo.png",
-                width: 220,
-                height: 220,
-              ),
+              Image.asset("assets/images/logo.png", width: 220, height: 220),
               const SizedBox(height: 50),
               const Text(
                 "ยินดีต้อนรับสู่โลกของ Pokémon!",
@@ -41,10 +38,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => TeamPage()),
-                    );
+                    Get.to(() => const TeamPage());
                   },
                   child: const Text(
                     "สร้างทีม",
