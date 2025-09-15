@@ -25,7 +25,6 @@ class _ProductListPageState extends State<ProductListPage> {
     super.initState();
     _fetchProducts(reset: true);
 
-    // ✅ Realtime subscribe
     pb.collection('product').subscribe('*', (e) {
       setState(() {
         if (e.action == 'create' && e.record != null) {
