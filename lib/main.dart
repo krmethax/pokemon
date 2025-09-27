@@ -68,46 +68,63 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 
   Future<String> sendMessage(String prompt) async {
-    final backendUrl = dotenv.env['BACKEND_URL'] ?? '';
-    final response = await http.post(
-      Uri.parse("$backendUrl/chat"),
-      headers: {"Content-Type": "application/json"},
-      body: jsonEncode({
-        "provider": _selectedProvider,
-        "model": _selectedModel,
-        "max_tokens": 500,
-        "messages": [
-          if (_selectedProvider == "anthropic")
+    if (_selectedProvider == "openai") {
+      final apiKey = dotenv.env['OPENAI_API_KEY'] ?? '';
+      final response = await http.post(
+        Uri.parse("https://api.openai.com/v1/chat/completions"),
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer $apiKey",
+        },
+        body: jsonEncode({
+          "model": _selectedModel,
+          "messages": [
+            {"role": "user", "content": prompt}
+          ],
+          "max_tokens": 500,
+        }),
+      );
+      final data = jsonDecode(response.body);
+      if (data["choices"] != null && data["choices"].isNotEmpty) {
+        return data["choices"][0]["message"]["content"];
+      } else if (data["error"] != null) {
+        return "API Error: ${data["error"]["message"]}";
+      }
+      return "No response";
+    }
+
+    if (_selectedProvider == "anthropic") {
+      final apiKey = dotenv.env['ANTHROPIC_API_KEY'] ?? '';
+      final response = await http.post(
+        Uri.parse("https://api.anthropic.com/v1/messages"),
+        headers: {
+          "x-api-key": apiKey,
+          "Content-Type": "application/json",
+          "anthropic-version": "2023-06-01"
+        },
+        body: jsonEncode({
+          "model": _selectedModel,
+          "max_tokens": 500,
+          "messages": [
             {
               "role": "user",
               "content": [
                 {"type": "text", "text": prompt}
               ]
             }
-          else
-            {
-              "role": "user",
-              "content": prompt
-            }
-        ]
-      }),
-    );
-
-    final data = jsonDecode(response.body);
-
-    if (_selectedProvider == "anthropic") {
+          ]
+        }),
+      );
+      final data = jsonDecode(response.body);
       if (data["content"] != null && data["content"].isNotEmpty) {
         return data["content"][0]["text"];
+      } else if (data["error"] != null) {
+        return "API Error: ${data["error"]["message"]}";
       }
-    } else if (_selectedProvider == "openai") {
-      if (data["choices"] != null && data["choices"].isNotEmpty) {
-        return data["choices"][0]["message"]["content"];
-      }
+      return "No response";
     }
-    if (data["error"] != null) {
-      return "API Error: ${data["error"]["message"]}";
-    }
-    return "No response";
+
+    return "Invalid provider";
   }
 
   @override
