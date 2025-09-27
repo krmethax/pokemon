@@ -1,6 +1,6 @@
 {
-    "name": "pokemon",
-    "short_name": "pokemon",
+    "name": "ai_chat_app",
+    "short_name": "ai_chat_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,0 +1,94 @@
+{
+   "checksum": "f4af2ee4acf1d05a37c8d735a8f9762f",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13400058754793745",
+               "date_last_used": "0",
+               "guid": "27ff98f3-33e6-4c9e-b09b-6b6bb4a63b20",
+               "id": "12",
+               "name": "Acer",
+               "show_icon": false,
+               "source": "import_fre",
+               "type": "url",
+               "url": "http://www.acer.com/",
+               "visit_count": 0
+            } ],
+            "date_added": "13403444299953050",
+            "date_last_used": "0",
+            "date_modified": "13403444300699802",
+            "guid": "36c32f3c-c391-4e6e-b57f-f76ddbccc3a5",
+            "id": "11",
+            "name": "Acer",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13403444296335542",
+            "date_last_used": "0",
+            "guid": "c1a35089-95c2-4399-93a1-25ba03eea94c",
+            "id": "8",
+            "name": "Agoda",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/agoda.html?utm_source=win32&utm_medium=favorite",
+            "visit_count": 0
+         }, {
+            "date_added": "13403444296335329",
+            "date_last_used": "0",
+            "guid": "0ade0bd9-d027-4053-a47e-b6c22f810bc7",
+            "id": "7",
+            "name": "Amazon",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/19q2/amazon.html?utm_source=win32&utm_medium=favorite",
+            "visit_count": 0
+         }, {
+            "date_added": "13403444296333848",
+            "date_last_used": "0",
+            "guid": "d4a73d7e-f86e-46f4-81de-bcca3c9a50ec",
+            "id": "6",
+            "name": "Facebook",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://s3.amazonaws.com/amundsen/redirect/20q2/facebook.html?utm_source=win32&utm_medium=favorite",
+            "visit_count": 0
+         } ],
+         "date_added": "13403444295970646",
+         "date_last_used": "0",
+         "date_modified": "13403444300699452",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13403444295970646",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13403444295970646",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCHNEpimZAQAAEgAqGGthSVVybGpDbzhtK1plVytYWGl4c2c9PUgDoAYHEqwBCAwSpwEKHHJDTlhuOHp3N1psKythTFBad3VIeDIrRXlKcz0SJDI3ZmY5OGYzLTMzZTYtNGM5ZS1iMDliLTZiNmJiNGE2M2IyMBgAIAAoADDyiJnNkjM4+YqZzZIzQPmKmc2SM0ocMnBzUHRXYTV6aW1UMGQ2MTk2V1pQa2xzZ1Y4PVoeIhxHV0hrYVF4WGIzbnlCSC9FUEF1RVM1TG9zQzA9ZQAAAADCPgJgAhKsAQgLEqcBChxHeTVyZkhHZ3lVd1lrRmwrd0kzeWE1bkNtVDg9EiQzNmMzMmYzYy1jMzkxLTRlNmUtYjU3Zi1mNzZkZGJjY2MzYTUYACAAKAAw8YiZzZIzOOCKmc2SM0DgipnNkjNKHFY0ZWE5ZkNKVklnQk1iUWpBSmVxMjZ2d0J6dz1aHiIcd2ZMcWlwdTlRNFlYRkllYUpRMjk4bnQ0bGNZPWUAAAAAwj4CYAASjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkYjY2MjY2ZTUtNzFjOS01NjFiLThhM2UtMWU0ODUxNjdkMWI2GAAgACgAMMn+gJXwMjjghoGV8DJA4IaBlfAyShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEo4BCAESiQEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDE4YmUxZTQ3LTk0ZDEtNTYwZi04M2I3LTYzZTk3NTBjZThmYRgAIAAoADDI/oCV8DI4yoaBlfAyQMqGgZXwMkocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAADCPgJgABKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQ3ZGFkOTUwYi1lYjI4LTU3YzItYmM0MC0yMTAzZDdiNWY1NWEYACAAKAAwzv6AlfAyOJCHgZXwMkCQh4GV8DJKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}

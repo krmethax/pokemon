@@ -1,19 +1,19 @@
-name: pokemon
+name: ai_chat_app
 description: "A new Flutter project."
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.9.0
+  sdk: ^3.7.2
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
   http: ^1.1.0
-  get_storage: ^2.1.1
-  get: ^4.6.5
-  cached_network_image: ^3.2.3
+  flutter_dotenv: ^5.2.1   # ✅ เหลือครั้งเดียว
+  cupertino_icons: ^1.0.8
+  mcp_llm: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +23,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/pokeball.png
-    - assets/images/logo.jpg
-    - assets/images/logo.png
+    - .env
