@@ -69,6 +69,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Future<String> sendMessage(String prompt) async {
     if (_selectedProvider == "openai") {
+      // OpenAI format
       final apiKey = dotenv.env['OPENAI_API_KEY'] ?? '';
       final response = await http.post(
         Uri.parse("https://api.openai.com/v1/chat/completions"),
@@ -84,6 +85,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           "max_tokens": 500,
         }),
       );
+
       final data = jsonDecode(response.body);
       if (data["choices"] != null && data["choices"].isNotEmpty) {
         return data["choices"][0]["message"]["content"];
@@ -94,6 +96,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     }
 
     if (_selectedProvider == "anthropic") {
+      // Anthropic (Claude) format
       final apiKey = dotenv.env['ANTHROPIC_API_KEY'] ?? '';
       final response = await http.post(
         Uri.parse("https://api.anthropic.com/v1/messages"),
@@ -115,6 +118,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           ]
         }),
       );
+
       final data = jsonDecode(response.body);
       if (data["content"] != null && data["content"].isNotEmpty) {
         return data["content"][0]["text"];
